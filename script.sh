@@ -5,9 +5,9 @@ max=10
 min=1
 
 #Generate a random variable between  1 to 10 
-number=$(( $RANDOM % (max - min + 1) + min ))
+number=$(( RANDOM % (max - min + 1) + min ))
 
-read -p "Enter the number " x
+read -r -p "Enter the number " x
 
 if [[ $x -eq $number ]]; then
    echo "you win"
