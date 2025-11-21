@@ -6,8 +6,6 @@ min=1
 
 #Generate a random variable between  1 to 10 
 number=$(( RANDOM % (max - min + 1) + min ))
- #initializs the number of tries
- tries=5
   
 echo "You are welcome to the guessing game"
 echo "guess a value from 1 to 10"
